@@ -32,6 +32,7 @@ public class HashTable {
             Word[computeHash(reviewText)].addNewAppearance(score);
         } else {
             Word[computeHash(reviewText)] = new WordEntry(reviewText, score);
+            
         }
     }
 
@@ -41,5 +42,6 @@ public class HashTable {
             x = true;
         }
         return x;
+        
     }
 }
